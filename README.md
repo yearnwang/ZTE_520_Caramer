@@ -21,7 +21,8 @@ binwalk -e C520_v216t3_firmware.bin
     
 - 下载john
 - 比较幸运，很短时间，算出了密码
-
+        
+        [root@VM_102_86_centos run]# ./unshadow passwd shadow > /opt/pas/txt_passwd
         [root@VM_102_86_centos run]# ./john --wordlist=super.txt /opt/pas/txt_passwd           
         Loaded 2 password hashes with no different salts (md5crypt [MD5 32/64 X2])
         Press 'q' or Ctrl-C to abort, almost any other key for status

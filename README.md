@@ -21,13 +21,13 @@ binwalk -e C520_v216t3_firmware.bin
     
 - 下载john
 - 比较幸运，很短时间，算出了密码
-'''
-    [root@VM_102_86_centos run]# ./john --wordlist=super.txt /opt/pas/txt_passwd           
-    Loaded 2 password hashes with no different salts (md5crypt [MD5 32/64 X2])
-    Press 'q' or Ctrl-C to abort, almost any other key for status
-    12345!@#$%       (zte!!)
-    1g 0:00:00:49 100% 0.02006g/s 10787p/s 10787c/s 12796C/s zzzzzzzzz..zzzzzzzzzz
-    Use the "--show" option to display all of the cracked passwords reliably
-    Session completed
-'''
+
+        [root@VM_102_86_centos run]# ./john --wordlist=super.txt /opt/pas/txt_passwd           
+        Loaded 2 password hashes with no different salts (md5crypt [MD5 32/64 X2])
+        Press 'q' or Ctrl-C to abort, almost any other key for status
+        12345!@#$%       (zte!!)
+        1g 0:00:00:49 100% 0.02006g/s 10787p/s 10787c/s 12796C/s zzzzzzzzz..zzzzzzzzzz
+        Use the "--show" option to display all of the cracked passwords reliably
+        Session completed
+
 ## 拆解硬件，用UART进入。。。

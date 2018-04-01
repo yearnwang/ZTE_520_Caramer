@@ -2,9 +2,11 @@
 进行中的项目......
 
 从朋友手中得到了一个ZTE_C520的小兴看看，可惜的是，这个设备被其他手机绑定了。
+他有一个后台系统，但是后台系统的密码需要在手机端才能查询的到。
+也就是说必须有绑定的手机跟设备同时存在，才可以用此设备，否则光拿着设备是没用的。这点做的非常的好，提高了安全系数，值得我们借鉴。
 
 ## 下载官方ROM
-binwalk -e C520_v216t3_firmware.bin
+    binwalk -e C520_v216t3_firmware.bin
 
     root@kali:/mnt/hgfs/share/_C520_v216t3_firmware.bin.extracted# ls -la
     total 9586
@@ -16,10 +18,12 @@ binwalk -e C520_v216t3_firmware.bin
 
 ## 破解密码
 - 从官方rom中，提取出
+
     /etc/shadow  
     /etc/passwd
     
 - 下载john
+
 - 比较幸运，很短时间，算出了密码
         
         [root@VM_102_86_centos run]# ./unshadow passwd shadow > /opt/pas/txt_passwd
@@ -31,7 +35,7 @@ binwalk -e C520_v216t3_firmware.bin
         Use the "--show" option to display all of the cracked passwords reliably
         Session completed
         
-<font color=red>user:zte!!    passwd:12345!@#$%</font>
+**<font color=red>user:zte!!    passwd:12345!@#$%</font>**
 
 
 ## 拆解硬件，用UART进入。。。

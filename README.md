@@ -38,4 +38,22 @@
 **<font color=red>user:zte!!    passwd:12345!@#$%</font>**
 
 
+
+        root@kali:~# nmap 192.168.1.108
+
+        Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-07 11:46 EDT
+        Nmap scan report for 192.168.1.108
+        Host is up (0.0052s latency).
+        Not shown: 996 closed ports
+        PORT      STATE SERVICE
+        80/tcp    open  http
+        554/tcp   open  rtsp
+        873/tcp   open  rsync
+        52869/tcp open  unknown
+        MAC Address: F0:84:C9:6F:83:F9 (zte)
+
+        Nmap done: 1 IP address (1 host up) scanned in 3.06 seconds
+
+
+
 ## 拆解硬件，用UART进入。。。

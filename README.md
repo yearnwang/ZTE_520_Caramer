@@ -39,9 +39,9 @@
 
 
 
-        root@kali:~# nmap 192.168.1.108
+        root@kali:~# nmap 192.168.1.108(摄像头ip)
 
-        Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-07 11:46 EDT
+        Starting Nmap 7.60 ( https://nmap.org ) at
         Nmap scan report for 192.168.1.108
         Host is up (0.0052s latency).
         Not shown: 996 closed ports

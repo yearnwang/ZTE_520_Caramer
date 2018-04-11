@@ -5,7 +5,10 @@
 他有一个后台系统，但是后台系统的密码需要在手机端才能查询的到。
 也就是说必须有绑定的手机跟设备同时存在，才可以用此设备，否则光拿着设备是没用的。这点做的非常的好，提高了安全系数，值得我们借鉴。
 
-## 下载官方ROM
+## 下载官方ROM 
+    
+    [官方rom下载地址](http://www.ztehome.com.cn/support/searchRsltTable.php?id=64)
+
     binwalk -e C520_v216t3_firmware.bin
 
     root@kali:/mnt/hgfs/share/_C520_v216t3_firmware.bin.extracted# ls -la

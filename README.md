@@ -57,6 +57,24 @@
 
         Nmap done: 1 IP address (1 host up) scanned in 3.06 seconds
 
+## 开了rsync端口，查看/etc/rsync.conf
+
+        [usb]
+        comment = rsync_mgr
+        path = /mnt/tf/usb
+        auth users = rsync
+
+        [nas]
+        comment = rsync_mgr
+        path = /mnt/netsrv/nas
+        auth users = rsync
+      
+ ## 查看rsyconf.secrets
+        又一个密码产生了。
+        rsync:ILoveHomecare
+ 
+
+
 
 
 ## 拆解硬件，用UART进入。。。
